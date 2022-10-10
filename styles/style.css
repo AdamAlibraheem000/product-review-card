@@ -1,0 +1,97 @@
+:root{
+    --primary-dark: hsl(158, 36%, 37%);
+    --primary-light: hsl(30, 38%, 92%);
+    --secondary-dark-blue: hsl(212, 21%, 14%);
+    --secondary-dark-gray: hsl(228, 12%, 48%);
+    --secondary-white: hsl(0, 0%, 100%);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz@9..144&family=Montserrat&display=swap');
+
+body{
+    font-size: 14px;
+    background-color: var(--secondary-white);
+    min-height: 100vh;
+   
+}
+
+
+
+main{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+.img-div{
+    height: 50vh;
+
+}
+
+img{
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.content{
+    font-family: 'Montserrat', sans-serif;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 30px;
+    
+}
+
+.content h1{
+    font-weight: 700;
+    font-size: 2rem;
+    margin: 20px 0;
+}
+
+.content h4{
+    margin: 20px 0;
+    font-size: 1.2rem;
+}
+
+.content p{
+    margin: 20px 20px;
+}
+
+.content .price-discount{
+    font-size: 2rem;
+    display: inline;
+}
+
+.content .price-retail{
+    font-size: 2rem;
+    display: inline;
+    text-decoration: line-through;
+}
+
+button{
+    display: block;
+    margin: 20px 0;
+    height: 50px;
+    width: 300px;
+    border-radius: 5px;
+    background-color: var(--primary-dark);
+    font-size: 1rem;
+    color: var(--secondary-white);
+}
+
+@media screen and (max-width: 375px){
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+}
