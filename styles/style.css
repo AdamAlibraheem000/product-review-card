@@ -29,11 +29,12 @@ main{
     justify-content: center;
     align-items: center;
     height: 100vh;
+    border: 5px solid var(--secondary-dark-gray);
     
 }
 
 .img-div{
-    height: 50vh;
+    height: 60vh;
 
 }
 
@@ -56,26 +57,36 @@ img{
     font-weight: 700;
     font-size: 2rem;
     margin: 20px 0;
+    font-family: 'Fraunces', sans-serif;
+    text-shadow: 1px 0px 3px black;
 }
 
 .content h4{
     margin: 20px 0;
-    font-size: 1.2rem;
+    font-size: 1rem;
+    color: var(--secondary-dark-gray);
+    text-transform: uppercase;
 }
 
 .content p{
-    margin: 20px 20px;
+    margin: 20px 10px;
+    color: var(--secondary-dark-gray);
+    line-height: 1.6;
 }
 
 .content .price-discount{
     font-size: 2rem;
     display: inline;
+    color: var(--primary-dark);
+    font-weight: 700;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .content .price-retail{
-    font-size: 2rem;
+    font-size: 1rem;
     display: inline;
     text-decoration: line-through;
+    color: var(--secondary-dark-gray);
 }
 
 button{
@@ -87,6 +98,7 @@ button{
     background-color: var(--primary-dark);
     font-size: 1rem;
     color: var(--secondary-white);
+    font-weight: bolder;
 }
 
 @media screen and (max-width: 375px){
